@@ -1,0 +1,602 @@
+<html>
+    <head><title>BookChateau: Archives</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/archives.css">
+        <script src="js/archives.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lato:wght@300;400;500;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body>
+        
+        <div id="site-name">
+        <div id="gold-text"><a href="index.html">BookChâteau</a></div>
+        </div>
+
+        <header>
+        
+        <nav>
+           <ul>
+                
+                <li><a href="index.html"><i class="fa-brands fa-fort-awesome"></i>Home</a></li>
+                
+                <li class="drop"><a href="categories.html"><i class="fa-solid fa-layer-group"></i>Categories</a>
+                    <ul class="drops-sub" id="cat">
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Comics</a></li>
+                        <li><a href="">Audio</a></li>
+                        <li><a href="">Web Comics</a></li>
+                        <li><a href="">Web Novels</a></li>
+                        <li><a href="">Podcasts</a></li>
+                    </ul>
+                    </li>
+                   
+                  
+                <li class="drop"><a href="genres1.html"><i class="fa-solid fa-place-of-worship"></i>Genres</a>
+                    <ul class="drops-sub" id="gen">
+                        <li><a href="">Biographies/<br>Autobiographies</a></li>
+                        <li><a href="">Self-Help</a></li>
+                        <li><a href="">Fantasy</a></li>
+                        <li><a href="">Thriller</a></li>
+                        <li><a href="">Romance</a></li>
+                        <li><a href="">Science</a></li>
+                        <li><a href="">Young Adult</a></li>
+                        <li><a href="">Psychology</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Horror</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="archives.html"><i class="fa-solid fa-box-archive"></i>Archives</a></li>    
+                <li><a href="clubs.html"><i class="fa-solid fa-people-roof"></i>Clubs</a></li>
+                <li><a href="authors.html"><i class="fa-solid fa-pen-nib"></i>Authors</a></li>
+                <li><a href="merchandise.html"><i class="fa-solid fa-store"></i>Merchandise</a></li>
+                <li class="drop"><a href="#"><i class="fa-solid fa-user"></i>My Library</a>
+                    <ul class="drops-sub" id="prof">
+                        <li><a href="profile.html"><i class="fa-solid fa-circle-user"></i>My Profile</a></li>
+                        <li><a href=""><i class="fa-solid fa-book-open-reader"></i>My Library</a></li>
+                        <li><a href=""><i class="fa-solid fa-gear"></i>Options</a></li>
+                        <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i>Profile</a></li>
+            </ul>
+
+            
+        <i class="fa-solid fa-bars"></i>
+
+    </nav>
+    </header>
+
+    <img id="regal-image" src="img/regal.png" width="810px" height="450px">
+
+    <div class="sign-board">
+    <img src="img6/lamp left.png">
+    <h2>Noble Archive</h2>
+    <img src="img6/lamp right.png">
+    </div>
+    
+    <div class="container">
+        
+        <!--Books-->
+        <div class="cat">
+            
+            <div><img src="img6/bookarchive.png" alt=""><h2>Books</h2></div>
+            <form class="archive-form">
+            <div class="archive">
+                <div><label>Sub-Category Name</label></div>
+                <div>
+                    <select name="category_name">
+                    <option>-- Select Subcategory --</option>
+                    <option value="print_books">Print Books</option>
+                    <option value="ebooks">eBooks</option>
+                    <option value="light_novels">Light Novels</option>
+                    <option value="short_stories">Short Stories</option>
+                    </select>
+                </div>
+                <div><label>Format</label></div>
+                <div>
+                    <select>
+                    <option>-- Select Format--</option>
+                    <option value="hardcover">Hard Cover</option>
+                    <option value="paperback">Paperback</option>
+                    <option value="ebook">eBook</option>
+                    <option value="kindle">Kindle</option>
+                    <option value="special_or_collector">Special/collectors's Edition</option>
+                </select>
+                </div>
+                <div><label>Book Name</label></div>
+                <div><input type="text"></div>
+                <div><label>Book Author</label></div>
+                <div><input type="text"></div>
+                <div><label>Rating</label></div>
+                <div><input type="number" min="1" max="10" step="0.1"></div>
+                <div><label>Reading Status</label></div>
+                <div class="reading-status">
+                    <label><input type="radio" name="reading-status" value="tbr">To be Read</label>
+                    <label><input type="radio" name="reading-status" value="reading">Reading</label>
+                    <label><input type="radio" name="status" value="completed">Completed</label>
+                    <label><input type="radio" name="reading-status" value="dropped">Dropped</label>
+                    <label><input type="radio" name="reading-status" value="wishlisted">Wishlisted</label>
+                </div>
+
+                <div><label>Remarks</label></div>
+                <div><textarea rows="3" cols="25" placeholder="Comment what you want to cherish"></textarea></div>
+                <div><button type="button" class="add">Add</button></div>
+                <div><input class="reset" type="reset"></div>
+            </div>
+        </form>
+        </div>
+
+        <!--Comics-->
+        <div class="cat">
+
+        <div>
+        <img src="img6/comicsarchive.png" alt=""><h2>Comics</h2></div>
+
+        <form class="archive-form">
+
+        <div class="archive">
+
+        <div><label>Sub-Category Name</label></div>
+        <div>
+            <select name="category_name">
+            <option>-- Select Subcategory --</option>
+            <option value="western_comics">Western Comics</option>
+            <option value="manga">Manga</option>
+            <option value="manhwa">Manhwa</option>
+            <option value="manhua">Manhua</option>
+        </select>
+        </div>
+
+<div><label>Format</label></div>
+<div>
+<select>
+<option>-- Select Format--</option>
+<option value="single_issue">Single Issue</option>
+<option value="graphic_novel">Graphic Novel</option>
+<option value="omnibus_edition">Omnibus Edition</option>
+<option value="hardcover_edition">Hardcover Edition</option>
+<option value="digital_comic">Digital Comic</option>
+</select>
+</div>
+
+<div><label>Comic Name</label></div>
+<div><input type="text"></div>
+
+<div><label>Illustrator / Artist</label></div>
+<div><input type="text"></div>
+
+<div><label>Volume / Chapter Number</label></div>
+<div><input type="number"></div>
+
+<div><label>Publisher</label></div>
+<div><input type="text"></div>
+
+<div><label>Rating</label></div>
+<div><input type="number" min="1" max="10" step="0.1"></div>
+
+<div><label>Reading Status</label></div>
+<div class="reading-status">
+
+<label><input type="radio" name="reading-status-comic" value="tbr">To be Read</label>
+<label><input type="radio" name="reading-status-comic" value="reading">Reading</label>
+<label><input type="radio" name="status" value="completed">Completed</label>
+<label><input type="radio" name="reading-status-comic" value="dropped">Dropped</label>
+<label><input type="radio" name="reading-status-comic" value="wishlisted">Wishlisted</label>
+
+</div>
+
+<div><label>Remarks</label></div>
+<div>
+<textarea rows="3" placeholder="Comment what you want to cherish"></textarea>
+</div>
+
+<div><button type="button" class="add">Add</button></div>
+<div><input class="reset" type="reset"></div>
+
+</div>
+</form>
+</div> 
+    <!--Audio-->
+    <div class="cat">
+
+<div>
+<img src="img6/audioarchive.png" alt="">
+<h2>Audio</h2>
+</div>
+
+<form class="archive-form">
+
+<div class="archive">
+
+<div><label>Sub-Category Name</label></div>
+<div>
+<select name="category_name">
+<option>-- Select Subcategory --</option>
+<option value="audiobooks">Audiobooks</option>
+<option value="audio_dramas">Audio Dramas</option>
+<option value="serialized_audio">Serialized Audio</option>
+<option value="story_adaptations">Story Adaptations</option>
+</select>
+</div>
+
+<div><label>Format</label></div>
+<div>
+<select>
+<option>-- Select Format--</option>
+<option value="standard_audiobook">Standard Audiobook</option>
+<option value="dramatized_audiobook">Dramatized Audiobook</option>
+<option value="multinarrator_edition">Multi-Narrator Edition</option>
+<option value="abridged_version">Abridged Version</option>
+<option value="unabridged_version">Unabridged Version</option>
+</select>
+</div>
+
+<div><label>Title</label></div>
+<div><input type="text"></div>
+
+<div><label>Author</label></div>
+<div><input type="text"></div>
+
+<div><label>Narrator / Voice Actor</label></div>
+<div><input type="text"></div>
+
+<div><label>Duration</label></div>
+<div><input type="time"></div>
+
+<div><label>Episodes / Chapters</label></div>
+<div><input type="number"></div>
+
+<div><label>Platform</label></div>
+<div><input type="text"></div>
+
+<div><label>Rating</label></div>
+<div><input type="number" min="1" max="10" step="0.1"></div>
+
+<div><label>Listening Status</label></div>
+<div class="reading-status">
+
+<label><input type="radio" name="listening-status" value="tbr">To Listen</label>
+<label><input type="radio" name="listening-status" value="listening">Listening</label>
+<label><input type="radio" name="status" value="completed">Completed</label>
+<label><input type="radio" name="listening-status" value="dropped">Dropped</label>
+<label><input type="radio" name="listening-status" value="wishlisted">Wishlisted</label>
+
+</div>
+
+<div><label>Remarks</label></div>
+<div>
+<textarea rows="3" placeholder="Comment what you want to cherish"></textarea>
+</div>
+
+<div><button type="button" class="add">Add</button></div>
+<div><input class="reset" type="reset"></div>
+
+</div>
+</form>
+</div>
+
+    <!--Web Comics--> 
+    <div class="cat">
+
+<div>
+<img src="img6/webcomicarchive.png" alt="">
+<h2>Web Comics</h2>
+</div>
+
+<form class="archive-form">
+
+<div class="archive">
+
+<div><label>Sub-Category Name</label></div>
+<div>
+<select name="category_name">
+<option>-- Select Subcategory --</option>
+<option value="webtoons">Webtoons</option>
+<option value="digital_manga">Digital Manga</option>
+<option value="indie_web_comics">Indie Web Comics</option>
+<option value="serialized_web_comics">Serialized Web Comics</option>
+</select>
+</div>
+
+<div><label>Format</label></div>
+<div>
+<select>
+<option>-- Select Format--</option>
+<option value="webtoon">Webtoon</option>
+<option value="paginated_digital">Paginated Digital</option>
+<option value="motion_comic">Motion Comic</option>
+<option value="interactive_comic">Interactive Comic</option>
+<option value="episodic_release">Episodic Release</option>
+</select>
+</div>
+
+<div><label>Series Title</label></div>
+<div><input type="text"></div>
+
+<div><label>Creator</label></div>
+<div><input type="text"></div>
+
+<div><label>Episodes / Chapters</label></div>
+<div><input type="number"></div>
+
+<div><label>Platform</label></div>
+<div><input type="text"></div>
+
+<div><label>Series Status</label></div>
+<div class="reading-status">
+<label><input type="radio" name="series_status_web">Ongoing</label>
+<label><input type="radio" name="series_status_web">Completed</label>
+<label><input type="radio" name="series_status_web">Hiatus</label>
+<label><input type="radio" name="series_status_web">Dropped</label>
+</div>
+
+<div><label>Origin</label></div>
+<div class="reading-status">
+<label><input type="radio" name="origin_web">Japanese</label>
+<label><input type="radio" name="origin_web">Korean</label>
+<label><input type="radio" name="origin_web">Chinese</label>
+<label><input type="radio" name="origin_web">Western</label>
+<label><input type="radio" name="origin_web">Indie</label>
+</div>
+
+<div><label>Rating</label></div>
+<div>
+<input type="number" min="1" max="10" step="0.1">
+</div>
+
+<div><label>Reading Status</label></div>
+<div class="reading-status">
+<label><input type="radio" name="reading_status_web">To be Read</label>
+<label><input type="radio" name="reading_status_web">Reading</label>
+<label><input type="radio" name="status" value="completed">Completed</label>
+<label><input type="radio" name="reading_status_web">Dropped</label>
+<label><input type="radio" name="reading_status_web">Wishlisted</label>
+</div>
+
+<div><label>Remarks</label></div>
+<div>
+<textarea rows="3" placeholder="Comment what you want to cherish"></textarea>
+</div>
+
+<div><button type="button" class="add">Add</button></div>
+<div><input class="reset" type="reset"></div>
+
+</div>
+
+</form>
+</div>
+
+<!--Web Novels-->
+
+<div class="cat">
+
+<div>
+<img src="img6/webnovelarchive.png" alt="">
+<h2>Web Novels</h2>
+</div>
+
+<form class="archive-form">
+
+<div class="archive">
+
+<div><label>Sub-Category Name</label></div>
+<div>
+<select name="category_name">
+<option>-- Select Subcategory --</option>
+<option value="fantasy">Fantasy</option>
+<option value="romance">Romance</option>
+<option value="action_adventure">Action / Adventure</option>
+<option value="slice_of_life">Slice of Life</option>
+<option value="thriller_mystery">Thriller / Mystery</option>
+</select>
+</div>
+
+<div><label>Format</label></div>
+<div>
+<select>
+<option>-- Select Format--</option>
+<option value="serialized">Serialized Chapters</option>
+<option value="completed_series">Completed Series</option>
+<option value="interactive_fiction">Interactive Fiction</option>
+<option value="premium">Premium / Subscription</option>
+<option value="free">Free Release</option>
+</select>
+</div>
+
+<div><label>Series Title</label></div>
+<div><input type="text"></div>
+
+<div><label>Author</label></div>
+<div><input type="text"></div>
+
+<div><label>Chapters</label></div>
+<div><input type="number"></div>
+
+<div><label>Platform</label></div>
+<div><input type="text"></div>
+
+<div><label>Series Status</label></div>
+<div class="reading-status">
+
+<label><input type="radio" name="series-status-webnovel" value="ongoing">Ongoing</label>
+
+<label><input type="radio" name="series-status-webnovel" value="completed">Completed</label>
+
+<label><input type="radio" name="series-status-webnovel" value="hiatus">Hiatus</label>
+
+<label><input type="radio" name="series-status-webnovel" value="dropped">Dropped</label>
+
+</div>
+
+<div><label>Language</label></div>
+<div class="reading-status">
+
+<label><input type="radio" name="language-webnovel" value="original">Original</label>
+
+<label><input type="radio" name="language-webnovel" value="translated">Translated</label>
+
+</div>
+
+<div><label>Rating</label></div>
+<div><input type="number" min="1" max="10" step="0.1"></div>
+
+<div><label>Reading Status</label></div>
+<div class="reading-status">
+<label><input type="radio" name="reading-status-webnovel" value="tbr">To be Read</label>
+<label><input type="radio" name="reading-status-webnovel" value="reading">Reading</label>
+<label><input type="radio" name="status" value="completed">Completed</label>
+<label><input type="radio" name="reading-status-webnovel" value="dropped">Dropped</label>
+<label><input type="radio" name="reading-status-webnovel" value="wishlisted">Wishlisted</label>
+</div>
+
+<div><label>Remarks</label></div>
+<div>
+<textarea rows="3" placeholder="Comment what you want to cherish"></textarea>
+</div>
+
+<div><button type="button" class="add">Add</button></div>
+<div><input class="reset" type="reset"></div>
+
+</div>
+
+</form>
+</div>
+
+<!--Podcast-->
+<div class="cat">
+
+<div>
+<img src="img6/podcastarchive.png" alt="">
+<h2>Podcasts</h2>
+</div>
+
+<form class="archive-form">
+
+<div class="archive">
+
+<div><label>Sub-Category Name</label></div>
+<div>
+<select name="category_name">
+<option>-- Select Subcategory --</option>
+<option value="storytelling">Storytelling</option>
+<option value="educational">Educational</option>
+<option value="interview">Interview</option>
+<option value="true_crime">True Crime</option>
+<option value="comedy">Comedy</option>
+</select>
+</div>
+
+<div><label>Format</label></div>
+<div>
+<select>
+<option>-- Select Format--</option>
+<option value="episodic">Episodic</option>
+<option value="seasonal">Seasonal Series</option>
+<option value="limited">Limited Series</option>
+<option value="live">Live Recorded</option>
+<option value="scripted">Scripted Podcast</option>
+</select>
+</div>
+
+<div><label>Podcast Title</label></div>
+<div><input type="text"></div>
+
+<div><label>Host / Creator</label></div>
+<div><input type="text"></div>
+
+<div><label>Platform</label></div>
+<div><input type="text"></div>
+
+<div><label>Duration</label></div>
+<div><input type="time"></div>
+
+<div><label>Episodes</label></div>
+<div><input type="number"></div>
+
+<div><label>Season Number</label></div>
+<div><input type="number"></div>
+
+<div><label>Rating</label></div>
+<div><input type="number" min="1" max="10" step="0.1"></div>
+
+<div><label>Listening Status</label></div>
+<div class="reading-status">
+
+<label><input type="radio" name="listening-status-podcast" value="to_listen">To Listen</label>
+<label><input type="radio" name="listening-status-podcast" value="listening">Listening</label>
+<label><input class="finished" type="radio" name="status" value="completed">Completed</label>
+<label><input type="radio" name="listening-status-podcast" value="dropped">Dropped</label>
+<label><input type="radio" name="listening-status-podcast" value="wishlisted">Wishlisted</label>
+
+</div>
+
+<div><label>Remarks</label></div>
+<div>
+<textarea rows="3" placeholder="Comment what you want to cherish"></textarea>
+</div>
+
+<div><button type="button" class="add">Add</button></div>
+<div><input class="reset" type="reset"></div>
+
+</div>
+
+</form>
+
+</div>
+
+    </div>
+
+    <div class="quotes">
+        <img src="img/jk-rowling.jpg"><br>
+        <span>”If you don’t like to read, you haven’t found the right book.” by J.K. Rowling</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            
+            <div class="site-footer">
+                <p class="footer-logo"><a href="index.html">BookChâteau</a></p>
+            </div>
+
+            <div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="genres1.html">Genres</a></li>
+                <li><a href="archives.html">Archives</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+            </ul>
+        </div>
+
+        <div class="sm">
+            <h3>Find us on</h3>
+            <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            <p><i class="fa-brands fa-x-twitter"></i> X</p>
+            <p><i class="fa-brands fa-square-instagram"></i> Instagram</p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><a href="contact.html"><i class="fa-solid fa-feather-pointed"></i>Write to us</a></p>
+            <p><a href=""><i class="fa-solid fa-envelope"></i>bookchâteau@gmail.com</a></p>
+            <p><a href=""><i class="fa-solid fa-phone"></i>+91 1234567890</a></p>
+            <p><a href=""><i class="fa-solid fa-location-dot"></i>123 Book Street, City</a></p>
+        </div>
+
+        </div>
+
+        <div>
+            <p class="copyright">© 2024 BookChâteau. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    </body>
+
+</html>
