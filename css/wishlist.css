@@ -1,0 +1,363 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background:
+    radial-gradient(circle at center, #f7ecd2 60%, #d8bf85 100%);
+    color: #2F2117;
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+#site-name
+{
+    width: 280px;
+    height: 55px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 55px;
+
+    background:
+    radial-gradient(circle at top,
+    #7a1616,
+    transparent 60%),
+    linear-gradient(
+    to bottom,
+    #4a0d0d,
+    #2b0000);
+    margin: 10px auto 10px auto;
+}
+#gold-text a
+{
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Libre Baskerville';
+    font-weight: bolder;
+
+    background: linear-gradient(
+        120deg,
+        #3f2a0a,
+        #b8962e,
+        #f5e27a,
+        #fff6c2,
+        #d4af37,
+        #8a6e2f,
+        #3f2a0a
+    );
+
+    background-size:150% auto;
+    background-clip:text;
+    color:transparent;
+}
+.container
+{
+    width: 800px;
+    height: 1300px;
+
+    border: 2px solid #950101;
+    border-radius: 5px;
+    background-color: #d8bf85;
+
+    margin: 20px auto 10px auto;
+
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+
+    background-image: url("../img5/grey wall.png");
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h3
+{
+    margin: 10px auto 10px auto;
+}
+.container h2
+{
+    margin: 50px auto 10px auto;
+}
+.container h2::before
+{
+    content: "⚜️";
+}
+.container h2::after
+{
+    content: "⚜️";
+}
+.container h3::before
+{
+    content: "👑";
+}
+.container h3::after
+{
+    content: "👑";
+}
+.top
+{
+    display: flex;
+}
+.top img
+{
+    width: 100px;
+    height: 200px;
+}
+.booksnumber
+{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+.booksnumber div
+{
+    width: 50px;
+    height: 25px;
+
+    border: 5px solid #D4AF37;;
+    border-bottom: 10px solid #D4AF37;
+    border-radius: 5px;
+    
+    background-color: #00000066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wishlistnumber
+{
+    position: absolute;
+    z-index: 2;
+    top: 175px;
+    font-size: large;
+}
+.shelf
+{
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 0; 
+}
+.book
+{
+    padding: 10px 10px 0 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;  
+    gap: 5px;
+}
+.book p
+{
+    font-style: normal;
+    font-size:16px;
+    font-weight:500;
+    width:100%;
+    margin: 6px 0 0 0;
+    text-align: center;
+}
+.book img
+{
+    width:100px;
+    height:150px;
+    display:block;
+    margin-bottom: 0;
+}
+hr
+{
+    grid-column: 1 / -1;
+    height: 16px;
+    border: none;
+    margin: 0;
+
+    background:
+    linear-gradient(to bottom,
+    #8b5a2b,
+    #74461f,
+    #5a3215);
+
+    box-shadow:
+    0 3px 6px rgba(0,0,0,0.2);
+
+    border-radius: 2px;
+    position: relative;
+    z-index: 3;
+}
+.quotes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+
+    50%
+    {
+        transform: translateY(-15px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+.quotes img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.quotes span
+{
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+footer
+{
+    width: 100%;
+    background-color: #4b0101;
+    padding: 30px 20px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.site-footer
+{
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    background:
+    radial-gradient(circle at top,
+    #7a1616,
+    transparent 60%),
+
+    linear-gradient(
+    to bottom,
+    #4a0d0d,
+    #2b0000);
+}
+
+.footer-logo
+{
+    margin: 0;
+}
+
+.footer-logo a
+{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+    text-decoration: none;
+
+    background: linear-gradient(
+        120deg,
+        #3f2a0a,
+        #b8962e,
+        #f5e27a,
+        #fff6c2,
+        #d4af37,
+        #8a6e2f,
+        #3f2a0a
+    );
+
+    background-size: 150% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+footer ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li
+{
+    list-style: none;
+    margin: 12px 0;
+    text-align: left;
+}
+
+footer a,
+.sm,
+.contact,
+.copyright
+{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sm,
+.contact
+{
+    text-align: left;
+}
+
+.sm h3,
+.contact h3
+{
+    margin-bottom: 15px;
+}
+
+.sm p,
+.contact p
+{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.sm i,
+.contact i
+{
+    margin-right: 10px;
+}
+
+.copyright
+{
+    margin-top: 25px;
+    font-size: 15px;
+}
